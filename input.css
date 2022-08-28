@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        box-sizing: border-box;
+        font-size: 62.5%;
+    }
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #3c01ca;
+        overflow: hidden;
+    }
+    h1 {
+        @apply text-center text-pink absolute w-full top-[52%]
+        left-[50%] text-4xl md:text-7xl tracking-more-wide font-extrabold;
+        transform: translate(-50%, -50%);
+      }
+  }
+  
+  @layer components {
+    header {
+        @apply relative h-[45vh] border-b-4 border-gray;
+      }
+
+      main {
+        @apply h-[55vh] mt-48 md:mt-56 text-gray flex text-center justify-around;
+      }
+
+      .left {
+        @apply w-[52rem] flex flex-col items-center;
+      }
+      
+      .right {
+        @apply w-[52rem] text-4xl;
+      }
+
+      .number {
+        @apply bg-gray text-blue-dark text-10xl w-60
+        text-center absolute bottom-0 left-[50%];
+        transform: translate(-50%, 50%);
+      }
+      
+      .between {
+        @apply text-2xl absolute text-gray top-[2rem] right-[2rem];
+      }
+
+      .reset{
+        @apply absolute top-[2rem] left-[2rem];
+      }
+      
+      .guess {
+        @apply bg-none border-4 border-0 
+        text-5xl p-4 md:p-8 text-blue-dark w-[16rem] md:w-[25rem] text-center block mb-12;
+      }
+      
+      .btn {
+        @apply border-0 bg-pink text-gray text-3xl py-4 px-6 rounded-2xl cursor-pointer;
+      }
+      
+      .btn:hover {
+        @apply bg-gray text-blue-dark;
+      }
+      
+      .message {
+        @apply text-3xl mb-12 h-[2rem] md:mb-16 md:h-[3rem];
+      }
+      
+      .label-score {
+        @apply text-3xl mb-[2rem];
+      }
+      .label-highscore {
+        @apply text-3xl mb-0;
+      }
+  }
+  
+  
