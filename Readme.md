@@ -12,4 +12,6 @@ To play again, click on the 'Reset' button
 
 This game was made using HTML, CSS (Tailwind) and JavaScript
 
+You can play the game online by visiting https://myguessanumbergame.netlify.app/
+
 Thank you for checking it out.
